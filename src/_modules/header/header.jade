@@ -1,2 +1,76 @@
 header.header
+    .header__backlayer
+        svg._hamburguer-top
+            rect(x="0", y="0", width="100%", height="100%")
+        svg._hamburguer-bottom
+            rect(x="0", y="0", width="100%", height="100%")
+        ._desktop
+            svg._desktop-left
+                rect(x="0", y="0", width="100%", height="100%")
+            svg._desktop-right
+                rect(x="0", y="0", width="100%", height="100%")
+            ._shade
+            .header__gamers
+                span.header__gamers__count 13.925.484
+                span gamers
+                
+            
+    .header__section-index
+        span
+        span
+        span
+                
+    .header__logo
+        a(href="/")
+            | <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>  
     
+    .header__hamburguer
+        span
+        span
+        span
+            
+
+    a.header__cta(href="#") Crea tu cuenta
+    a.header__cta.header__cta--desktop(href="#") Juega Gratis
+    
+    nav.header__nav
+        ul.header__menu
+            each item in site.data.header
+                li
+                    a.header__menu__toplvl(href=item.url)
+                        span= item.name
+                    if item.submenu
+                        ul.header__submenu
+                            each subitem in item.submenu
+                                li
+                                    a.header__menu__sublvl(href=subitem.url)
+                                        if subitem.icon
+                                            i.axicon.axicon--small(class="axicon-#{subitem.icon}")
+                                        span= subitem.name
+            li
+                a.header__menu__toplvl.header__menu__toplvl--axcash(href="#", target="_blank") Recarga axesoCa$h
+    
+    h1.header__title Plataforma de juegos online
+    
+    ul.header__topnav
+        li
+            a(href="#") Inicia sesión
+                i.material-icons keyboard_arrow_down
+            ul.header__topnav__submenu
+                li
+                    a(href="#")
+                        i.fa.fa-facebook
+                        | facebook connect
+                li
+                    a(href="#")
+                        i.fa.fa-google
+                        | Google connect
+                li
+                    a(href="#")
+                        i.fa.fa-envelope-o
+                        | axeso5 connect
+                        
+        li
+            a(href="#") Crea tu cuenta
+    
+        

@@ -1,0 +1,81 @@
+.axicon {
+    $a:&;
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    font-style: normal;
+
+    &--small {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+
+        &:after {
+            font-size: 10px;
+        }
+    }
+
+    &:after {
+        font-size: 12px;
+        color: $white;
+    }
+
+    &--AUD {
+        background: $AUD;
+
+        &:after {
+            content: 'AUD';
+        }
+    }
+
+    &--KAR {
+        background: $KAR;
+
+        &:after {
+            content: 'KAR';
+        }
+    }
+
+    &--ZUL {
+        background: $ZUL;
+
+        &:after {
+            content: 'ZUL';
+        }
+    }
+
+    &.axicon-gm1 {
+        background: $black;
+        &:after {
+            content: 'GM1';
+        }
+    }
+    &.axicon-gm2 {
+        background: $darkestGray;
+        &:after {
+            content: 'GM2';
+        }
+    }
+    &.axicon-gm3 {
+        background: $darkGray;
+        &:after {
+            content: 'GM3';
+        }
+    }
+    &.axicon-gm4 {
+        background: $midGray;
+        &:after {
+            content: 'GM4';
+        }
+    }
+    &.axicon-gm5 {
+        background: $darkGray;
+        &:after {
+            content: 'GM5';
+        }
+    }
+}

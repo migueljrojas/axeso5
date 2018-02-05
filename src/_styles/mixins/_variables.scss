@@ -8,14 +8,42 @@ $lightGray: #ebebeb;
 $lightestGray: #f4f7f8;
 $blue: #053f7a;
 $blueGray: #bbc9c9;
+$ax5orange: #f04c38;
 
-$link: $blue;
-$linkHover: $blue + #333;
+// Games
+
+$WIA: #303; // World in audition
+$MM: red;
+$ZMR: #a32518; // ZMR
+$OP7: #333; // OP7
+$ELO: #ed1c24;  // Elsword
+$LP: #de07a6;
+$DB: #fc0; // Dirty Bomb
+$GCH: #f30; // Grang Chase
+$HON: #693; // HoN
+$KAR: #963; // Karos
+$RS3: #069; // RuneScape 3
+$ACE: #000; // Ace Online
+$BF: #f60; //  BRick Force
+$AUD: #09f; // Audition
+$ZUL: #d5005f; // Zula
+$NAR: #ed632d; // Naruto
+$LOA: #e2b71b; // League of Angels 2
+
+// Social networks
+$fb: #3B5998;
+$tw: #00B6F1;
+$yt: #FF0000;
+$ig: #C32AA3;
+$lk: #007BB6;
+
+$link: $ax5orange;
+$linkHover: $ax5orange - #333;
 $text: $white;
-$textDark: $black;
-$accent: $blue;
+$textDark: $darkestGray;
+$mainColor: $ax5orange;
 $bg: $white;
-$bgSecondary: $blue;
+$bgSecondary: $ax5orange;
 $bgDark: $black;
 
 $base: 40px;
@@ -34,4 +62,4 @@ $duration: 0.3s;
 $easing: cubic-bezier(.785, .135, .15, .86);
 $easingLight: ease;
 
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Raleway', sans-serif;

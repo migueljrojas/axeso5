@@ -1,0 +1,51 @@
+mixin gamecard(data, klass)
+    .gamecard(class=klass)
+        .gamecard__trailer
+            iframe.gamecard__trailer__video(data-src=data.trailer)
+            .gamecard__overlay
+                img(src=data.cover)
+        .gamecard__ui
+            .gamecard__type
+                ul.gamecard__type__icons
+                    each icon in data.type
+                        li.gamecard__type__icon
+                            a(href='#')
+                                img(src=icon.src)
+                            .gamecard__type__icon__desc
+                                i.fa.fa-caret-up
+                                h4= icon.name
+                                p= icon.desc
+                
+            ul.gamecard__social.gamecard__social--vertical
+                li
+                    a(href=data.social.facebook, target="_blank")
+                        i.fa.fa-facebook
+                li
+                    a(href=data.social.instagram, target="_blank")
+                        i.fa.fa-instagram
+            
+            
+            a.gamecard__logo(href=data.web, target="_blank")
+                img(src=data.logo)
+                    
+            button.gamecard__trigger
+                span
+                i.fa.fa-caret-right
+                    
+            a.gamecard__cta(href=data.download) descargar                    
+            
+        .gamecard__data
+            .gamecard__data__header
+                a(href=data.web, target="_blank")
+                    h2.gamecard__data__name= data.name
+                ul.gamecard__social
+                    li
+                        a(href=data.social.facebook, target="_blank")
+                            i.fa.fa-facebook
+                    li
+                        a(href=data.social.instagram, target="_blank")
+                            i.fa.fa-instagram
+                button.gamecard__close
+                    i.fa.fa-times
+            .gamecard__data__body
+                p.gamecard__data__desc= data.desc

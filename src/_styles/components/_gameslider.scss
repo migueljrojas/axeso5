@@ -1,0 +1,133 @@
+.gameslider {
+    position: relative;
+
+    .slick-track {
+        display: flex;
+    }
+
+    &__row {
+        &--top {
+            .slick-slide {
+
+                &:hover {
+                    @include mq(md){
+                        flex-basis: 300px;
+                    }
+                }
+            }
+        }
+
+        &--bottom {
+            .slick-slide {
+
+                &:hover {
+                    @include mq(md){
+                        flex-basis: 110px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slide {
+        @include trans;
+        flex: 1 1;
+    }
+
+    .slick-arrow {
+        @include trans;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background: $black;
+        padding: 10px;
+        z-index: 10;
+        transform: translateY(0);
+
+        &:before {
+            display: none;
+        }
+
+        &:after {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: $white;
+            font-size: 21px;
+        }
+
+        &.slick-prev {
+            left:-40px;
+            border-radius: 0 50% 50% 0;
+            justify-content: flex-end;
+            text-align: right;
+            padding-right: 15px;
+
+            &:after {
+                content: "\f053";
+            }
+        }
+
+        &.slick-next {
+            right:-40px;
+            border-radius: 50% 0 0 50%;
+            justify-content: flex-start;
+            text-align: left;
+            padding-left: 15px;
+
+            &:after {
+                content: "\f054";
+            }
+        }
+
+    }
+
+    &__item {
+        @include trans;
+
+        display: block;
+        background: $darkestGray;
+        color: $white;
+
+        &--top {
+            height: 60vw;
+
+            @include mq(sm){
+                height: 30vw;
+            }
+
+            @include mq(lg){
+                height: 25vw;
+            }
+
+            @include customMq(1600px){
+                height: 20vw;
+            }
+        }
+
+        &--bottom {
+            height: 30vw;
+
+            @include mq(sm){
+                height: 20vw;
+            }
+
+            @include mq(lg){
+                height: 15vw;
+            }
+
+            @include customMq(1600px){
+                height: 13vw;
+            }
+        }
+    }
+}

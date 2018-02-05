@@ -1,298 +1,387 @@
 .home {
-    background: $lightGray;
-    padding: 40px 0;
+    &__games {
+        background: $bgDark;
 
-    &__container {
-        background: $white;
-        box-shadow: 0 0 10px rgba(0,0,0,.3);
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+        &.js-section {
+            padding: 180px 0 0!important;
 
-    &__title {
-        font-weight: 300;
-        font-size: 24px;
-        color: $blue;
-        margin: 0 0 40px;
-        text-align: center;
-
-        @include mq(sm){
-            font-size: 32px;
-        }
-    }
-
-    &__intro {
-        background: $lightGray;
-        height: 300px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        p {
-            padding: 0 15px 0 30px;
-        }
-    }
-
-    &__slider {
-        &__slide {
-            height: 300px;
-        }
-    }
-
-    &__news {
-        &__title {
-            font-size: 21px;
-            color: $blue;
-            font-weight: 300;
-        }
-        li{
-            margin-bottom: 15px;
-            &:nth-child(odd) {
-                background: $lightestGray;
+            @include mq(md){
+                padding: 250px 0 0!important;
             }
         }
     }
 
-    &__news-item {
-        padding-left: 15px;
-        &__date {
-            display: block;
-            background: $blue;
-            color: $white;
-            font-size: $xs;
-            padding: 3px 0;
-            text-align: center;
-        }
+    &__content {
+        background: $bgDark;
 
-        &__img {
-            height: 0;
-            width: 100%;
-            padding-bottom: 100%;
-            position: relative;
-            overflow: hidden;
-
-            img {
-                position: absolute;
-                height: 100%;
-                min-width: 100%;
-                top:0;
-                left:0;
-            }
-        }
-
-        &__txtcol {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        &__title {
-            color:$blue;
-            font-size: 14px;
-            margin: 0 0 5px;
-            padding:0 10px;
-            font-weight: 700;
-        }
-
-        &__text {
-            font-size: 14px;
-            margin: 0 0 5px;
-            padding:0 10px;
-        }
-
-        &__link {
-            font-weight: 700;
-            padding-left: 10px;
-            display: block;
-            font-size: $xs;
-        }
-    }
-
-    &__activities {
-        display: flex;
-        flex-wrap: wrap;
-
-        &__title {
-            font-size: 21px;
-            color: $blue;
-            font-weight: 300;
-        }
-        li{
-            width: 50%;
-            flex-basis: 50%;
-            height: 0;
-            padding-bottom: 32%;
-            position: relative;
-            overflow: hidden;
-        }
-    }
-
-    &__activities-item {
-        &__img {
-            position: absolute;
-            z-index: 0;
-            width: 100%;
-            min-height: 100%;
-        }
-
-        &__overlay {
-            @include trans;
-
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            top:0;
-            bottom:0;
-            left:0;
-            right:0;
-            background: rgba(0,0,0,.7);
-            opacity: 0;
-            color: $white;
-            text-align: center;
-
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        &__name {
-            font-weight: 300;
-            font-size: 16px;
-            color: $white;
-
-            @include mq(sm){
-                font-size: 21px;
-            }
-        }
-
-        &__more {
-            display: block;
-            background: $white;
-            border-radius: 50%;
-            font-weight: 300;
-            font-size: 24px;
-            width: 32px;
-            height: 32px;
-            line-height: 32px;
-            text-align: center;
-        }
-    }
-
-    &__gallery {
-        padding: 40px 0;
-
-        &__list {
+        &__wrapper {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-content: stretch;
 
-            li {
-                margin: 1px;
+            @include mq(md) {
+                flex-wrap: nowrap;
+            }
+        }
+
+        &__media {
+            flex-grow: 2;
+
+            &__tabs {
+                display: flex;
+                position: relative;
+                z-index: 2;
+
+                li {
+                    @include trans;
+
+                    position: relative;
+                    flex-basis: 50%;
+                    border-right: 1px solid $bgDark;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 21px;
+                    color: $lightGray;
+                    background: $darkestGray - #111;
+                    cursor: pointer;
+
+                    &:before {
+                        @include trans;
+                        position: absolute;
+                        bottom: -3px;
+                        height: 3px;
+                        left: 0;
+                        content: '';
+                        width: 0;
+                        background: $link;
+                    }
+
+                    &.-active {
+                        color: $white;
+                        background: $darkestGray + #111;
+
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
             }
 
-            img {
-                height: 80px;
-                width: auto;
+            &__container {
 
                 @include mq(md) {
-                    height: 160px;
+                    padding: 20px 0;
+                }
+
+                &.-active {
+
+                    @include mq(md) {
+                        display: flex !important;
+                    }
+                }
+
+                &--news{
+
+                    @include mq(md){
+                        display: flex;
+                    }
+
+                    .axnews-slider {
+                        margin-bottom: 10px;
+
+                        @include mq(md){
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                &--video {
+                    min-height: 58vh;
+                    &.-active {
+
+                        @include mq(md) {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+
+            &__slider,
+            &__scroller {
+                flex-basis:100%;
+                width: 100%;
+            }
+
+            &__slider{
+                @include mq(md){
+                    flex-basis:55%;
+                    width: 55%;
+                    padding-right: 35px;
+                }
+            }
+
+            &__scroller {
+                @include mq(md){
+                    padding-right: 15px;
+                    flex-basis:45%;
+                    width: 45%;
+                }
+            }
+
+            &__video-selector {
+                @include trans;
+                background: $black;
+                color: $lightGray;
+                font-size: 24px;
+                border:none;
+                padding: 10px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+
+        }
+
+        &__social {
+            width: 100%;
+            height: 50px;
+
+            @include mq(md){
+                width: 330px;
+                flex-basis: 330px;
+                padding: 0 15px 20px;
+            }
+
+            &__networks {
+                position: relative;
+
+                @include mq(md){
+                    width: 300px;
+                }
+            }
+
+            &__ad {
+                display: none;
+                @include mq(md){
+                    display:block;
+                }
+            }
+
+            &__network {
+                @include trans;
+                pointer-events: none;
+                position: absolute;
+                bottom: 50px;
+                transform: translateY(100%);
+                width: 100%;
+
+                @include mq(md){
+                    position: static;
+                }
+
+                &.-active {
+                    transform: translateY(0);
+                    pointer-events: all;
+                }
+
+                ._square {
+                    width: 100%;
+                    height: 220px;
+
+                    @include mq(md){
+                        margin-bottom: 10px;
+                    }
+
+                    ._tab-close {
+                        @include close();
+                        top: 10px;
+                        right:10px;
+
+                        @include mq(md){
+                            display: none;
+                        }
+                    }
+                }
+
+                &__list {
+                    background: $darkestGray - #111;
+                    height: 50px;
+                    padding: 0 90px 0 15px;
+                    color: $white;
+                    font-size: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+
+                    @include mq(md){
+                        padding: 0 15px;
+                        font-size: 21px;
+                    }
+
+                    ._section-title {
+                        line-height: 50px;
+                        height: 50px;
+                    }
+                }
+
+                &__selector {
+                    @include trans;
+
+                    background: $darkestGray;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    @include mq(md){
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    &:before {
+                        @include trans;
+
+                        content: '';
+                        background: $darkestGray;
+                        height: 10px;
+                        width: 10px;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+
+                        @include mq(md){
+                            top: auto;
+                            bottom: 1px;
+                        }
+                    }
+
+                    i {
+                        line-height: 32px;
+                        font-size: 18px;
+                        position: relative;
+                        z-index: 2;
+
+                        @include mq(md){
+                            line-height: 40px;
+                        }
+                    }
+
+                    &.-active {
+                        cursor: default;
+
+                        &:before{
+
+                            top:-3px;
+
+                            @include mq(md){
+                                top: auto;
+                                bottom:-4px;
+                            }
+                        }
+                    }
+
+                    &--fb {
+                        &.-active {
+                            background: $fb;
+
+                            &:before {
+                                background: $fb;
+                            }
+                        }
+                    }
+
+                    &--tw {
+                        &.-active {
+                            background: $tw;
+
+                            &:before {
+                                background: $tw;
+                            }
+                        }
+                    }
+
+                    &--ig {
+                        &.-active {
+                            background: $ig;
+
+                            &:before {
+                                background: $ig;
+                            }
+                        }
+                    }
+
+                    &--lk {
+                        &.-active {
+                            background: $lk;
+
+                            &:before {
+                                background: $lk;
+                            }
+                        }
+                    }
+                }
+
+                &--fb {
+                    ._square {
+                        background: transparentize($fb, .75);
+                    }
+                }
+
+                &--tw {
+                    ._square {
+                        background: transparentize($tw, .75);
+                    }
+                }
+
+                &--ig {
+                    ._square {
+                        background: transparentize($ig, .75);
+                    }
+                }
+
+                &--lk {
+                    ._square {
+                        background: transparentize($lk, .75);
+                    }
+                }
+
+                &--default {
+                    display: none !important;
+
+                    @include mq(md) {
+                        &.-active {
+
+                            display: block !important;
+                        }
+                    }
+
+                    ._square {
+                        background: transparentize($yt, .75);
+                        color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        text-align: center;
+                    }
                 }
             }
         }
     }
 
-    &__contact {
-        $c: &;
+    .js-section {
+        padding: 130px 0 0;
 
-        i {
-            margin-right: 10px;
-        }
-
-        .embed-responsive.-map {
-            padding-bottom: 55%;
-        }
-
-        &__title {
-            font-size: 21px;
-            color: $blue;
-            font-weight: 300;
-            margin: 0 0 15px;
-        }
-
-        &__form {
-            ._button {
-                margin-bottom: 40px;
-
-                @include mq(sm){
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        &__form-group {
-            @include trans;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 15px;
-        }
-
-        &__label {
-            @include trans;
-
-            order: 1;
-            opacity: 0;
-            transform: translateY(100%);
-            font-weight: 700;
-            font-size: 12px;
-            color: $blue;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            display: block;
-            height: 0;
-        }
-
-        &__input {
-            @include trans;
-
-            background: $lightGray;
-            color: $blue;
-            border: none;
-            height: 40px;
-            padding: 0 5px;
-            order: 2;
-
-            &::placeholder {
-                @include trans;
-                opacity: .5;
-            }
-
-            &:focus {
-                outline:none;
-                border:none;
-                box-shadow: 0 0 10px rgba(0,0,0,.15);
-
-                &::placeholder {
-                    opacity: 0;
-                }
-
-                & + #{$c}__label {
-                    opacity: 1;
-                    transform: none;
-                    padding-bottom: 15px;
-                }
-            }
-
-            &--textarea {
-                height: 120px;
-
-                & + #{$c}__label {
-                    opacity: 1;
-                    transform: none;
-                    padding-bottom: 15px;
-                }
-            }
+        @include mq(md){
+            padding: 220px 0 0;
         }
     }
 }

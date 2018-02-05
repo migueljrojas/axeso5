@@ -1,0 +1,17 @@
+*[data-tab-collection] {
+    [data-tab] {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+
+        &.-active {
+            display: block;
+            visibility: visible;
+            @include axanimation(0s, .5s, 1, fadeIn, $easing);
+
+            @include mq(md) {
+                display: block;
+            }
+        }
+    }
+}

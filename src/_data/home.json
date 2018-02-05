@@ -1,3 +1,106 @@
 {
-    
+    "content":{
+        "slider":[
+            {
+                "game":{
+                    "class":"AUD",
+                    "name":"Audition 5"
+                },
+                "mode":"event",
+                "img":"/images/home/event-1.jpg",
+                "title":"Evento login en audition 5",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"KAR",
+                    "name":"Karos: Guerra de Tronos"
+                },
+                "mode":"news",
+                "img":"/images/home/news-1.jpg",
+                "title":"Ya comenzaron las inscripciones",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"ZUL",
+                    "name":"Zula"
+                },
+                "mode":"news",
+                "img":"/images/home/event-1.jpg",
+                "title":"Lorem ipsum dolor sit amet",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            }
+        ],
+        "news":[
+            {
+                "game":{
+                    "class":"AUD",
+                    "name":"Audition 5"
+                },
+                "mode":"event",
+                "title":"Evento login en audition 5",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"KAR",
+                    "name":"Karos: Guerra de Tronos"
+                },
+                "mode":"event",
+                "title":"Ya comenzaron las inscripciones",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"ZUL",
+                    "name":"Zula"
+                },
+                "mode":"news",
+                "title":"Lorem ipsum dolor sit amet",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"AUD",
+                    "name":"Audition 5"
+                },
+                "mode":"event",
+                "title":"Evento login en audition 5",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"KAR",
+                    "name":"Karos: Guerra de Tronos"
+                },
+                "mode":"news",
+                "title":"Ya comenzaron las inscripciones",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            },
+            {
+                "game":{
+                    "class":"ZUL",
+                    "name":"Zula"
+                },
+                "mode":"news",
+                "title":"Lorem ipsum dolor sit amet",
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            }
+        ],
+        "videos":[
+            {
+                "name":"Video Numero 1",
+                "id":"OIxq3KkBJS8"
+            },
+            {
+                "name":"Video Numero 2",
+                "id":"DWoeRTobizc"
+            },
+            {
+                "name":"Video Numero 3",
+                "id":"A7Gu7C9a8JA"
+            }
+        ]
+    }
 }

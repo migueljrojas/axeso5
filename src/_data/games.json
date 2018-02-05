@@ -1,0 +1,371 @@
+[
+    {
+        "priority":1,
+        "cover":"/images/gamecard/zula.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Zula",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":1,
+        "cover":"/images/gamecard/audition.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Audition",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":1,
+        "cover":"/images/gamecard/naruto.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Naruto",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":2,
+        "cover":"/images/gamecard/karos.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Karos",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":2,
+        "cover":"/images/gamecard/ace.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Ace Online",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":2,
+        "cover":"/images/gamecard/zmr.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"ZMR",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":2,
+        "cover":"/images/gamecard/elsword.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Elsworld",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":2,
+        "cover":"/images/gamecard/league-of-angels.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"League of Angels 2",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "priority":2,
+        "cover":"/images/gamecard/runescape.jpg",
+        "trailer":"https://www.youtube.com/embed/A7Gu7C9a8JA",
+        "name":"Runescape",
+        "type":[
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            },
+            {
+                "src":"/images/gamecard/crosshair.png",
+                "name":"FPS",
+                "desc":"JUego de disparos en primera persona"
+            }
+        ],
+        "social":{
+            "facebook":"http://facebook.com",
+            "instagram":"http://instagram.com"
+        },
+        "logo":"/images/gamecard/gamelogo.png",
+        "download":"http://axeso5.com",
+        "web":"http://axeso5.com",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+]

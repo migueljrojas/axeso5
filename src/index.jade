@@ -1,15 +1,134 @@
 extends _layouts/base
 
-include _modules/link/link
+include _modules/slider/slider
+include _modules/gamecard/gamecard
 
 block content
-  .container
-    .yeogurt-info
-      h1 Welcome to Yeogurt!
-      p.
-        Take a look at the
-        #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
-        and start mixing up something awesome.
-      p
-        img.logo(src="images/yeogurt-swirl.png", width="75px")
-  code.version v2.0.0
+    main.home
+        section.home__games.js-section(data-section-name="games")
+            .gameslider
+                .gameslider__row.gameslider__row--top
+                    +slider('gameslider__top')
+                        each game in site.data.games
+                            if game.priority == 1
+                                .gameslider__item.gameslider__item--top
+                                    +gamecard(game, 'gamecard--top')
+                .gameslider__row.gameslider__row--bottom
+                    +slider('gameslider__bottom')
+                        each game in site.data.games
+                            if game.priority == 2
+                                .gameslider__item.gameslider__item--bottom
+                                    +gamecard(game, 'gamecard--bottom')
+            .gamecard__popup
+        section.home__content.js-section(data-section-name="news-and-media")
+            .container
+                .row.nopadding
+                    .col-xs-24.home__content__wrapper
+                        .home__content__media(data-tab-collection="true", data-init="true")
+                            ul.home__content__media__tabs
+                                li(data-target="news") axNow
+                                li(data-target="video") axVideo
+                            .home__content__media__container.home__content__media__container--news(data-tab="news")
+                                .home__content__media__slider
+                                    .axnews-slider
+                                        each slide in site.data.home.content.slider
+                                            .axnews-slider__slide(class="#{slide.game.class} axnews-slider__slide--#{slide.mode}")
+                                                .axnews-slider__img
+                                                    img.img-responsive(src=slide.img)
+                                                .axnews-slider__data
+                                                    h3.axnews-slider__title= slide.title
+                                                    p.axnews-slider__desc= slide.desc
+                                                    a.axnews-slider__readmore(href=slide.url) Seguir leyendo &gt;&gt;
+                                                        
+                                                if slide.mode == event
+                                                    span.axnews-slider__tag
+                                                        i.fa.fa-calendar Evento
+                                                if slide.mode == news
+                                                    span.axnews-slider__tag
+                                                        i.fa.fa-exclamation-circle Noticia
+                                                
+                                        ul.axnews-slider__nav
+                                            each item in site.data.home.content.slider
+                                                li(class="axnews-slider__nav__item axnews-slider__nav__item--#{item.game.class}")= item.game.class
+                                .home__content__media__scroller
+                                    .axnews-scroller.js-scroll-disable
+                                        ul.axnews-scroller__list
+                                            each news in site.data.home.content.news
+                                                li.axnews-scroller__item
+                                                    .axnews-scroller__item__heading
+                                                        i.axicon.axicon--small(class="axicon--#{news.game.class}")
+                                                        span.axnews-scroller__item__date Jun 30
+                                                        if news.mode == "event"
+                                                            span.axnews-scroller__item__tag
+                                                                i.fa.fa-calendar
+                                                                | Evento
+                                                        if news.mode == "news"
+                                                            span.axnews-scroller__item__tag
+                                                                i.fa.fa-exclamation-circle
+                                                                | Noticia
+                                                        h3.axnews-scroller__item__title= news.title
+                                                    .axnews-scroller__item__body
+                                                        p.axnews-scroller__item__text= news.desc
+                                                        a.axnews-scroller__item__readmore(href=news.url) Seguir leyendo &gt;&gt;
+                            
+                            .home__content__media__container.home__content__media__container--video(data-tab="video")
+                                select.home__content__media__video-selector
+                                    each video in site.data.home.content.videos
+                                        option(value=video.id)= video.name
+                                .embed-responsive.embed-responsive-16by9.home__content__media__video__container
+                                    iframe.embed-responsive-item.home__content__media__video(src="https://www.youtube.com/embed/OIxq3KkBJS8")
+                                    
+                        .home__content__social
+                            .home__content__social__networks(data-tab-collection="true", data-init="false")
+                                ul.home__content__social__network__list
+                                    li
+                                        span._section-title axSocial
+                                    li.home__content__social__network__selector.home__content__social__network__selector--fb(data-target="facebook")
+                                        i.fa.fa-facebook
+                                    li.home__content__social__network__selector.home__content__social__network__selector--tw(data-target="twitter")
+                                        i.fa.fa-twitter
+                                    li.home__content__social__network__selector.home__content__social__network__selector--ig(data-target="instagram")
+                                        i.fa.fa-instagram
+                                    li.home__content__social__network__selector.home__content__social__network__selector--lk(data-target="linkedin")
+                                        i.fa.fa-linkedin
+                                .home__content__social__network.home__content__social__network--default.-active(data-tab="default")
+                                    ._square
+                                        ._tab-close(data-tab-close="true")
+                                            span
+                                            span
+                                        span.h2 Siguenos en las redes sociales!
+                                    .home__content__social__ad
+                                        img(src="/images/home/banner-300x250.gif")
+                                            
+                                .home__content__social__network.home__content__social__network--fb(data-tab="facebook")
+                                    ._square
+                                        ._tab-close(data-tab-close="true")
+                                            span
+                                            span
+                                    .home__content__social__ad
+                                        img(src="/images/home/banner-300x250.gif")
+                                    
+                                .home__content__social__network.home__content__social__network--tw(data-tab="twitter")
+                                    ._square
+                                        ._tab-close(data-tab-close="true")
+                                            span
+                                            span
+                                    .home__content__social__ad
+                                        img(src="/images/home/banner-300x250.gif")
+                                    
+                                .home__content__social__network.home__content__social__network--ig(data-tab="instagram")
+                                    ._square
+                                        ._tab-close(data-tab-close="true")
+                                            span
+                                            span
+                                    .home__content__social__ad
+                                        img(src="/images/home/banner-300x250.gif")
+                                    
+                                .home__content__social__network.home__content__social__network--lk(data-tab="linkedin")
+                                    ._square
+                                        ._tab-close(data-tab-close="true")
+                                            span
+                                            span
+                                    .home__content__social__ad
+                                        img(src="/images/home/banner-300x250.gif")
+                                
